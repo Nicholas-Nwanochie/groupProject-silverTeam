@@ -122,41 +122,29 @@ box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
 
 .screen {
     width: 100px;
-    height: 55px;
+    height: 100px;
+    background: red;
     position: relative;
-  }
-  
-  .screen, 
-  .screen:before, 
-  .screen:after {
-    background-color: whitesmoke;
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);   
-  }
-  
-  .screen:before,
-  .screen:after {
+    }
+    .screen:before {
     content: "";
-    position: absolute;
-    left: 22px;
-    width: 57px;
-    height: 57px;
-    transform: rotate(145deg) skew(22.5deg);
-  }
-  
-  .screen:before {
-    top: -29px;
-  }
-  
-  .screen:after {
-    top: 27px;
-  }
-  
-  .screen span {
+    width: 100px;
+    height: 0;
     position: absolute;
     top: 0;
     left: 0;
+    border-bottom: 29px solid red;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+    }
+    .screen:after {
+    content: "";
     width: 100px;
-    height: 55px;
-    background: white;
-    z-index: 1;
-  }
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid red;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+    }  
