@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMA Gym Markers</title>
+    <style>
+    /* Must have height & width in order for map to show up on the site. */
+        #map {
+            height: 650px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Top Houston Area MMA Gyms</h1>
+
+    <!-- This div must be here, it holds the map. -->
+
+    <div id="map"></div>
+
+    <script>
+        function initMap(){
+            //Map center point with zoom setting. 
+            var options = {
+                zoom: 11,
+                center: {lat: 29.749907, lng: -95.358421}
+            } 
+
+            //syntax for Google maps. Creates map & states which HTML element it should appear in.
+            var map = new google.maps.Map(document.getElementById('map'), options);
+            
+            // Add Markers 
+            addMarker({
+                coords:{lat: 29.733600, lng: -95.426880},
+                content:'<h3>Elite Mixed Martial Arts - Greenway Plaza/Galleria</h3>\n<h4>Address: 3311 Richmond Ave Suite 101, Houston, TX 77098</h4>\n<h4>Phone: (832) 413-1078</h4>' 
+            }); 
+            // Elite Mixed Martial Arts - Greenway Plaza/Galleria  Address: 3311 Richmond Ave Suite 101  Phone: (832) 413-1078  https://www.elite-mma.com/greenway-galleria/
+            addMarker({
+                coords:{lat: 29.731050, lng: -95.499400},
+                content:'<h3>Wu Training Studio Martial Arts and Fitness</h3>\n<h4>Address: 6423 Richmond Ave ste, Houston, TX 77057</h4>\n<h4>Phone: (281) 888-6556</h4>' 
+            }); // https://wutrainingstudio.com/ 
+            addMarker({
+                coords: {lat: 29.736780, lng: -95.579308},
+                content: '<h3>Elite Mixed Martial Arts - Houston<h/3>\n<h4>Address: 11380 Westheimer Rd, Houston, TX 77077</h4>\n<h4>Phone: (713) 339-4662</h4>'
+            }); //  https://www.elite-mma.com/
+            addMarker({
+                coords: {lat: 29.72987905, lng: -95.386900437},
+                content: '<h3>Midtown MMA Houston <h/3>\n<h4>Address: 4916 Main St #120, Houston, TX 77002</h4>\n<h4>Phone: (281) 974-4499</h4>' 
+            }); // https://www.midtown-mma-houston.com/  
+            addMarker({
+                coords: {lat: 29.8016583, lng: -95.4262444},
+                content: '<h3>Urban Jungle Self Defense<h/3>\n<h4>Address: 1035 W 18th St, Houston, TX 77008</h4>\n<h4>Phone: (713) 861-7252</h4>' 
+            }); //  https://www.urbanjungleselfdefense.com/
+            addMarker({
+                coords: {lat: 29.7928009, lng: -95.1898934},
+                content: '<h3>RISE MMA and FITNESS<h/3>\n<h4>Address: 12732 Woodforest Blvd, Houston, TX 77015</h4>\n<h4>Phone: (832) 516-8644</h4>' 
+            });  //     http://www.teamrisemma.com/ 
+            addMarker({
+                coords: {lat: 29.73907528, lng: -95.52242244},
+                content: '<h3>Gracie Barra Westchase Brazilian Jiu Jitsu <h/3>\n<h4>Address: 2610 Fondren Rd, Houston, TX 77063 </h4>\n<h4>Phone: (713) 977-7418 </h4>' 
+            });  // https://gbwestchase.com/
+            // addMarker({lat: 29.73830361, lng: -95.52129145});  // Paradigm Training Center - Southwest  Address: 10500 W Bellfort Ave #200, Houston, TX 77031    https://www.txgym.com/  
+            // addMarker({
+            //     coords: {lat: 29.73907528, lng: -95.52242244},
+            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
+            // }); //
+            //             addMarker({
+            //     coords: {lat: 29.73907528, lng: -95.52242244},
+            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
+            // }); //
+            // addMarker({
+            //     coords: {lat: 29.73907528, lng: -95.52242244},
+            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
+            // }); //
+            // addMarker({
+            //     coords: {lat: 29.73907528, lng: -95.52242244},
+            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
+            // }); //
+            // addMarker({
+            //     coords: {lat: 29.73907528, lng: -95.52242244},
+            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
+            // }); //
+            // addMarker({
+            //     coords: {lat: 29.73907528, lng: -95.52242244},
+            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
+            // }); //
+
+            //Add Marker Function with icon
+            function addMarker(props){
+                var marker = new google.maps.Marker({
+                position: props.coords,
+                map: map,
+                icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            });
+
+            //Check pop-up window for content. If content is not added it will default to the standard Google Marker.  
+            if(props.content){
+                var infoWindow = new google.maps.InfoWindow({
+                content: props.content
+            });
+            
+            //.addListener is basically the same as an Event Listener but addListener is the syntax for Google. 
+            marker.addListener('click', function(){
+                infoWindow.open(map, marker);
+            });
+            }
+        }
+    }
+    </script>
+
+    <!-- API key and google link. Must have in order for map to work. -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjd5Xz5FqlmFI5pmKAvPp8P0Z52DkArJU&callback=initMap"></script>
+
+</body>
+</html>
