@@ -38,7 +38,7 @@ body {
 	font-family: "PT Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	background: none;
+	background-color: black;
 }
 
 h1,
@@ -123,19 +123,58 @@ ol {
   Helper CSS
 -----------------------*/
 
+.video-container {
+	position: relative;
+	width: 100%;
+	height: auto;
+	/* padding-bottom: 56.25%; */
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	  overflow: hidden;
+	
+	}
+	 
+	.video-container iframe,
+	.video-container object,
+	.video-container embed {
+	position: relative;
+	margin: auto;
+	/* top: 50%;
+	left: 50%;
+	width: 50%; */
+	/* transform: translate(-50%, -50%); */
+	}
+
 .section-title {
 	margin-bottom: 76px;
 }
 
+.section-title h1{
+	color: #CCC7B5;
+	font-size: 64px;
+	margin-bottom: 10px;
+}
+
+.section-title p{
+	font-size: 24px;
+}
+
+.section-title a{
+	font-size: 24px;
+	width: 100%;
+}
+
 .section-title h2 {
-	color: #081624;
+	color: #FFFDEF;
 	font-size: 48px;
 	font-weight: 500;
 	line-height: 50px;
 	position: relative;
 }
 
-.section-title h2:after {
+/* .section-title h2:after {
 	position: absolute;
 	left: 0;
 	top: -30px;
@@ -145,7 +184,7 @@ ol {
 	content: "";
 	right: 0;
 	margin: 0 auto;
-}
+} */
 
 .set-bg {
 	background-repeat: no-repeat;
@@ -334,12 +373,14 @@ ol {
 .inner-header .main-menu {
 	float: right;
 	margin-right: -15px;
+	height: 94px;
 }
 
 .inner-header .main-menu ul li {
 	list-style: none;
 	display: inline-block;
 	margin-right: 30px;
+	font-size: 30px;
 }
 
 .inner-header .main-menu ul li:nth-child(5) {
@@ -347,33 +388,39 @@ ol {
 }
 
 .inner-header .main-menu ul li a {
-	font-size: 15px;
+	font-size: 18px;
 	font-family: "Oswald", sans-serif;
 	font-weight: 500;
-	color: #081624;
+	color: #FFFDEF;
 	text-transform: uppercase;
 	padding: 36px 20px;
 	position: relative;
 	z-index: 1;
 }
 
+.inner-header .main-menu ul li a:hover {
+	background: #7F1313;
+	color: #FFFDEF;
+}
+
 .inner-header .main-menu ul li a.active {
 	background: #545454;
-	color: #CCC7B5;
+	color: #FFFDEF;
 }
 
 .inner-header .main-menu ul li a:after {
 	position: absolute;
+	color:#FFFDEF;
 	left: 21px;
 	top: 25px;
 	width: 24px;
-	height: 7px;
+	height: 10px;
 	background: #7F1313;
 	content: "";
 }
 
 .inner-header .main-menu ul li.phone-num {
-	background: #F3F4FF;
+	background: #7F1313;
 	padding: 31px 54px 29px 54px;
 	margin-right: -5px;
 }
@@ -382,7 +429,7 @@ ol {
 	height: 34px;
 	width: 34px;
 	background: #7F1313;
-	color: #ffffff;
+	color: #7F1313;
 	display: inline-block;
 	text-align: center;
 	line-height: 34px;
@@ -398,6 +445,8 @@ ol {
 }
 
 .inner-header .main-menu ul li.search-btn {
+	height: 34px;
+	width: 34px;
 	font-size: 22px;
 	padding: 30px 35px 31px 35px;
 	background: #7F1313;
@@ -594,13 +643,34 @@ ol {
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 }
+.button {
+	color: #7F1313;
+	border-radius: 10px;
+	background: radial-gradient(circle, #000000 0.25em, transparent 0.25em) center/1.2em 1.2em;
+	border: 3px solid #7F1313;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	width: 100%;
+  }
+
+.button:hover {
+  color: #fff;
+  background: radial-gradient(circle, #000000 0.25em, transparent 0.25em) center/0.1em 0.1em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 
 .single-services i {
 	display: inline-block;
 }
 
-.single-services h4 {
+.single-services a {
 	color: #ffffff;
+	font-size: 30px;
+	
+}
+.single-services a:hover{
+	color: black;
 }
 
 /*---------------------
@@ -608,9 +678,18 @@ ol {
 -----------------------*/
 
 .client-says {
+	background-size: stretch;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.55) !important;
+	background-image: url('http://placekitten.com/1500/1000');
+	background-blend-mode: color;
 	padding-top: 200px;
 	padding-bottom: 195px;
+	margin-bottom: 150px;
+	width: 100%;
+	height: auto;
 }
+
 
 .client-text h2 {
 	font-size: 48px;
@@ -650,6 +729,7 @@ ol {
 }
 
 .lifestyle-text .section-title p {
+	color:#FFFDEF ;
 	margin-bottom: 52px;
 }
 
@@ -2065,6 +2145,7 @@ ol {
 
 .ticker {
   overflow: hidden;
+  color: white;
   width: 100%;
   padding: 5px 0 120px;
   position: fixed;
@@ -2133,26 +2214,26 @@ ol {
 }
 
 .ticker-title {
-  width: 2500px;
+  width: 7000px;
   margin-top: 5px;
   padding-bottom: 5px;
-  color: #FFFDEF;
+  color: #CCC7B5;
   font-size: 20px;
   text-transform: uppercase;
-  text-shadow: 0 0 2px #065b70;
+  /* text-shadow: 0 0 2px #065b70; */
   
-  background: linear-gradient(135deg,  rgba(0, 0, 0, 1) 0%,rgba(84, 84, 84,0.93) 11%,rgba(127, 19, 19, 0.75) 24%,rgba(127,19,19,0.93) 30%,rgba(127,19,19,0.5) 68%); /* W3C */
+  background: linear-gradient(135deg,  rgba(0, 0, 0, 1) 0%,rgba(60, 60, 60, 0.93) 11%,rgba(70, 70, 70, 0.75) 24%,rgba(127,19,19,0.93) 30%,rgba(127,19,19,0.5) 68%); /* W3C */
 }
 
 .ticker-title > * {
   display: inline-block;
   margin-right: 50px;
-  animation: title 6s infinite linear;
+  /* animation: title 30s infinite linear;
 }
 
 @keyframes title {
   0% {transform: translateX(0);}
-  100% {transform: translateX(-233px);}
+  100% {transform: translateX(-4135px);} */
 }
 
 .ticker-news {
@@ -2163,14 +2244,28 @@ ol {
   text-transform: uppercase;
   text-shadow: 0 0 5px rgba(0,0,0,1); 
   
-  background: linear-gradient(135deg,  rgb(0, 0, 0) 0%,rgb(70, 74, 75) 11%,rgba(119, 19, 35, 0.5) 29%); /* W3C */
+  background: linear-gradient(135deg,  rgba(0, 0, 0, 1) 0%,rgba(60, 60, 60, 0.93) 11%,rgba(70, 70, 70, 0.75) 24%,rgba(127,19,19,0.93) 30%,rgba(127,19,19,0.5) 68%); /* W3C */
 }
+
+/* .feed-item-title {
+	color: white;
+} */
+
 
 .ticker-news > * {
-  display: inline-block;
-  animation: news 20s infinite linear;
+  display: flex;
+  flex-direction: row;
+  /* margin-right: 10px; */
+  animation: news 40s infinite linear;
 }
 
+.feed-item-title {
+	margin-right: 15px;
+}
+
+.feed-item-title a{
+	color: #CCC7B5;
+}
 @keyframes news {
   0% {transform: translateX(0);}
   100% {transform: translateX(-4135px);}
