@@ -24,67 +24,89 @@
         function initMap(){
             //Map center point with zoom setting. 
             var options = {
-                zoom: 11,
+                zoom: 10.5,
                 center: {lat: 29.749907, lng: -95.358421}
             } 
 
             //syntax for Google maps. Creates map & states which HTML element it should appear in.
             var map = new google.maps.Map(document.getElementById('map'), options);
-            
+
             // Add Markers 
             addMarker({
                 coords:{lat: 29.733600, lng: -95.426880},
-                content:'<h3>Elite Mixed Martial Arts - Greenway Plaza/Galleria</h3>\n<h4>Address: 3311 Richmond Ave Suite 101, Houston, TX 77098</h4>\n<h4>Phone: (832) 413-1078</h4>' 
+                content:'<h5><a target="blank "href="https://www.elite-mma.com/greenway-galleria/">Elite Mixed Martial Arts - Greenway Plaza/Galleria</a></5>\n<h5>Address: 3311 Richmond Ave Suite 101, Houston, TX 77098</h5>\n<h5>Phone: (832) 413-1078</h5>\n<h5>Rating: 4.5 ★★★★☆ - 183 Google reviews</h5>'
             }); 
-            // Elite Mixed Martial Arts - Greenway Plaza/Galleria  Address: 3311 Richmond Ave Suite 101  Phone: (832) 413-1078  https://www.elite-mma.com/greenway-galleria/
             addMarker({
-                coords:{lat: 29.731050, lng: -95.499400},
-                content:'<h3>Wu Training Studio Martial Arts and Fitness</h3>\n<h4>Address: 6423 Richmond Ave ste, Houston, TX 77057</h4>\n<h4>Phone: (281) 888-6556</h4>' 
-            }); // https://wutrainingstudio.com/ 
+                coords:{lat: 29.730972, lng: -95.499535},
+                content:'<h5><a target="blank "href="https://www.wufightersworld.com/">Wu Training Studio Martial Arts and Fitness</a></h5>\n<h5>Address: 6423 Richmond Ave ste, Houston, TX 77057</h5>\n<h5>Phone: (281) 888-6556</h5>\n<h5>Rating: 5.0 ★★★★★ - 15 Google reviews</h5>' 
+            }); 
             addMarker({
-                coords: {lat: 29.736780, lng: -95.579308},
-                content: '<h3>Elite Mixed Martial Arts - Houston<h/3>\n<h4>Address: 11380 Westheimer Rd, Houston, TX 77077</h4>\n<h4>Phone: (713) 339-4662</h4>'
-            }); //  https://www.elite-mma.com/
+                coords: {lat: 29.738003, lng: -95.579964},
+                content: '<h5><a target="blank "href="https://www.elite-mma.com/">Elite Mixed Martial Arts - Houston</a><h/5>\n<h5>Address: 11380 Westheimer Rd, Houston, TX 77077</h5>\n<h5>Phone: (713) 339-4662</h5><h5>Rating: 4.9 ★★★★★ - 426 Google reviews</h5>'
+            }); 
             addMarker({
-                coords: {lat: 29.72987905, lng: -95.386900437},
-                content: '<h3>Midtown MMA Houston <h/3>\n<h4>Address: 4916 Main St #120, Houston, TX 77002</h4>\n<h4>Phone: (281) 974-4499</h4>' 
-            }); // https://www.midtown-mma-houston.com/  
+                coords: {lat: 29.729865, lng: -95.386887},
+                content: '<h5><a target="blank "href="https://www.midtown-mma-houston.com/">Midtown MMA Houston</a><h/5>\n<h5>Address: 4916 Main St #120, Houston, TX 77002</h5>\n<h5>Phone: (281) 974-4499</h5>\n<h5>Rating: 4.7 ★★★★★ - 49 Google reviews</h5>'
+            });  
             addMarker({
-                coords: {lat: 29.8016583, lng: -95.4262444},
-                content: '<h3>Urban Jungle Self Defense<h/3>\n<h4>Address: 1035 W 18th St, Houston, TX 77008</h4>\n<h4>Phone: (713) 861-7252</h4>' 
-            }); //  https://www.urbanjungleselfdefense.com/
+                coords: {lat: 29.802046, lng: -95.417865},
+                content: '<h5><a target="blank "href="https://www.urbanjungleselfdefense.com/">Urban Jungle Self Defense</a><h/5>\n<h5>Address: 1035 W 18th St, Houston, TX 77008</h5>\n<h5>Phone: (713) 861-7252</h5>Rating: 4.1 ★★★★☆ - 32 Google reviews</h5>'
+            });  
             addMarker({
-                coords: {lat: 29.7928009, lng: -95.1898934},
-                content: '<h3>RISE MMA and FITNESS<h/3>\n<h4>Address: 12732 Woodforest Blvd, Houston, TX 77015</h4>\n<h4>Phone: (832) 516-8644</h4>' 
-            });  //     http://www.teamrisemma.com/ 
+                coords: {lat: 29.791385, lng: -95.199238},
+                content: '<h5><a target="blank "href="http://www.teamrisemma.com/">RISE MMA and FITNESS</a><h/5>\n<h5>Address: 12732 Woodforest Blvd, Houston, TX 77015</h5>\n<h5>Phone: (832) 516-8644</h5>\n<h5>Rating: 4.7 ★★★★☆ - 24 Google reviews</h5>'
+            });   
             addMarker({
                 coords: {lat: 29.73907528, lng: -95.52242244},
-                content: '<h3>Gracie Barra Westchase Brazilian Jiu Jitsu <h/3>\n<h4>Address: 2610 Fondren Rd, Houston, TX 77063 </h4>\n<h4>Phone: (713) 977-7418 </h4>' 
-            });  // https://gbwestchase.com/
-            // addMarker({lat: 29.73830361, lng: -95.52129145});  // Paradigm Training Center - Southwest  Address: 10500 W Bellfort Ave #200, Houston, TX 77031    https://www.txgym.com/  
+                content: '<h5><a target="blank "href="https://gbwestchase.com/">Gracie Barra Westchase Brazilian Jiu Jitsu</a><h/5>\n<h5>Address: 2610 Fondren Rd, Houston, TX 77063 </h5>\n<h5>Phone: (713) 977-7418</h5>\n</h5>4.8 ★★★★★ - 113 Google reviews</h5>' 
+            });  
+            addMarker({
+                coords: {lat: 29.653900, lng: -95.563507},
+                content: '<h5><a target="blank "href="https://www.txgym.com/">Paradigm Training Center - Southwest</a><h/5>\n<h5>Address: 10500 W Bellfort Ave #200, Houston, TX 77031 </h5>\n<h5>Phone: (713) 660-9442</h5>\n<h5>Rating: 5.0 ★★★★★ - 35 Google reviews</h5>' 
+            });  
+            addMarker({
+                coords: {lat: 29.879220, lng: -95.693304},
+                content: '<h5><a target="blank "href="http://houstonmmaclasses.com/">Houston MMA Classes</a><h/5>\n<h5>Address: 18611 Farm to Market Rd 529 #201, Cypress, TX 77433</h5>\n<h5>Phone: (713) 474-7330</h5>\n<h5>Rating: 4.5 ★★★★☆ - 23 Google reviews</h5>' 
+            }); 
+            addMarker({
+                coords: {lat: 29.77539481, lng: -95.77941314},
+                content: '<h5><a target="blank "href="http://www.revolutiondojo.com/">Revolution Dojo Katy</a><h/5>\n<h5>Address: 414 W Grand Pkwy S #197, Katy, TX 77494</h5>\n<h5>Phone: (281) 702-0789</h5>\n<h5>Rating: 4.9 ★★★★★ - 227 Google reviews</h5>'
+            });
+            addMarker({
+                coords: {lat: 29.965001, lng: -95.568827},
+                content: '<h5><a target="blank"href=https://teamtooke.com/">Team Tooke Mixed Martial Arts</a><h/5>\n<h5>Address: 10111 Grant Rd R, Houston, TX 77070</h5>\n<h5>Phone: (281) 955-7300</h5>\n<h5>Rating: 4.9 ★★★★★ - 158 Google reviews</h5>'
+            });
+            addMarker({
+                coords: {lat: 29.955702, lng: -95.586397},
+                content: '<h5><a target="blank "href="http://4ozmma.com/">4oz Fight Club</a><h/5>\n<h5>Address: 12525 Jones Rd, Houston, TX 77070</h5>\n<h5>Phone: (832) 604-7777</h5>\n<h5>Rating: 4.5 ★★★★☆ - 21 Google reviews</h5>'
+            });
+            addMarker({
+                coords: {lat: 29.785167, lng: -95.410054},
+                content: '<h5><a target="blank "href="https://www.oathletik.com/">O Athletik Jui-Jitsu - Houston Heights Gym </a><h/5>\n<h5>Address: 767 N Shepherd Dr, Houston, TX 77007</h5>\n<h5>Phone: (713) 320-2450</h5>\n<h5>Rating: 5.0 ★★★★★ - 3 Google reviews</h5>'
+            }); 
+            addMarker({
+                coords: {lat: 29.737709, lng: -95.349592},
+                content: '<h5><a target="blank "href="http://metrofightclub.com/">METRO FIGHT CLUB</a><h/5>\n<h5>Address: 3401 Gulf Fwy, Houston, TX 77003</h5>\n<h5>Phone: (713) 794-0054</h5>\n<h5>Rating: 4.7 ★★★★★ - 31 Google reviews</h5>'
+            }); 
+            addMarker({
+                coords: {lat: 29.817859, lng: -95.426924},
+                content: '<h5><a target="blank "href="https://heritagemuaythai.com/">Heritage Muay Thai</a><h/5>\n<h5>Address: 1604 W 34th St, Houston, TX 77018</h5>\n<h5>Phone: (832) 326-6453</h5>\n<h5>Rating: 4.9 ★★★★★ - 100 Google reviews</h5>'
+            }); 
+            addMarker({
+                coords: {lat: 29.70560666, lng: -95.44120982},
+                content: '<h5><a target="blank "href="https://bambammartialartshouston.com/">Bam Bam Martial Arts Houston</a><h/5>\n<h5>Address: 4007 Bellaire Blvd, Houston, TX 77025</h5>\n<h5>Phone: (281) 516-5594</h5>\n<h5>Rating: 4.8 ★★★★★ - 143 Google reviews</h5>'
+            }); 
+            addMarker({
+                coords: {lat: 29.731367, lng: -95.499579},
+                content: '<h5><a target="blank "href="https://www.wellnessliving.com/martialart/houston/kings_mma__kickboxing/schedule/?id_mode=12#&&&&&dt_date=2020-02-24&f_distance=50&f_latitude=29.7936&f_longitude=-95.3675&filter=1&&is_appointment_cancel_recurring=&is_appointment_cancel_single=&is_class_cancel=0&&is_remove=0&is_week=1&&&k_business=78599&&&k_class_tab=0&&k_location=121705&k_promotion=0&k_skin=0&&s_period=week&s_xml=microsite&sort=&a_day[]=&k_location=121705&k_time=1,2,3">Kings MMA and Kickboxing</a><h/5>\n<h5>Address: 6423 Richmond Ave, Houston, TX 77057</h5>\n<h5>Phone: (832) 577-0071</h5>\n<h5>Rating: 5.0 ★★★★★ - 19 Google reviews</h5>'
+            });
             // addMarker({
             //     coords: {lat: 29.73907528, lng: -95.52242244},
-            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
-            // }); //
-            //             addMarker({
-            //     coords: {lat: 29.73907528, lng: -95.52242244},
-            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
+            //     content: '<h5><a target="blank "href="WEBSITE">NAME</a><h/5>\n<h5>ADDRESS</h5>\n<h5>PHONE</h5>\n<h5>Rating: 0.0 ★★★★★ - 00 Google reviews</h5>'
             // }); //
             // addMarker({
             //     coords: {lat: 29.73907528, lng: -95.52242244},
-            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
-            // }); //
-            // addMarker({
-            //     coords: {lat: 29.73907528, lng: -95.52242244},
-            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
-            // }); //
-            // addMarker({
-            //     coords: {lat: 29.73907528, lng: -95.52242244},
-            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
-            // }); //
-            // addMarker({
-            //     coords: {lat: 29.73907528, lng: -95.52242244},
-            //     content: '<h3><h/3>\n<h4></h4>\n<h4></h4>' 
+            //     content: '<h5><a target="blank "href="WEBSITE">NAME</a><h/5>\n<h5>ADDRESS</h5>\n<h5>PHONE</h5>\n<h5>Rating: 0.0 ★★★★★ - 00 Google reviews</h5>'
             // }); //
 
             //Add Marker Function with icon
@@ -92,7 +114,13 @@
                 var marker = new google.maps.Marker({
                 position: props.coords,
                 map: map,
-                icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                icon: 'https://static.wixstatic.com/media/28198a_6aae1a91628d438b88e171632645741e~mv2.png/v1/fill/w_32,h_32,al_c,q_85/rsz_2921676.webp'
+                // https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png
+                // https://image.flaticon.com/icons/png/128/921/921676.png
+                // https://image.flaticon.com/icons/png/512/921/921676.png
+                // https://picresize.com/popup.html?images/rsz_2921676.png
+                // https://pageseana.wixsite.com/mysite/image-only
+                // https://static.wixstatic.com/media/28198a_6aae1a91628d438b88e171632645741e~mv2.png/v1/fill/w_32,h_32,al_c,q_85/rsz_2921676.webp
             });
 
             //Check pop-up window for content. If content is not added it will default to the standard Google Marker.  
@@ -100,11 +128,14 @@
                 var infoWindow = new google.maps.InfoWindow({
                 content: props.content
             });
-            
-            //.addListener is basically the same as an Event Listener but addListener is the syntax for Google. 
+
+            //.addListener is an Event Listener but addListener is the syntax for Google. 
             marker.addListener('click', function(){
-                infoWindow.open(map, marker);
+                infoWindow.open(map, marker); //'click' or 'mouseover'
             });
+            // marker.addListener('mouseout', function(){
+            //     infoWindow.open(map, marker);
+            // });
             }
         }
     }
