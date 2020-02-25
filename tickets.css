@@ -1,7 +1,16 @@
 body{
+    
+
+}
+
+/* #bg{
     background-image: url("images/steelcage4.jpg");
     background-repeat: no-repeat ;
     background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh; */
+
 
 }
 
@@ -34,4 +43,28 @@ img {
     -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
     -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
     box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
+
+
+
+#character-box{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    border: thin solid black;
+
+}
+
+#character-box2{
+    background-repeat: no-repeat;
+}
+
+.versus{
+    
+}
+
+
+.Khabibinfo{
+    color: white;
 }
