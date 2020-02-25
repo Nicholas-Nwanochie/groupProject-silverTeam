@@ -10,15 +10,19 @@ p.innerHTML=
     Out of Dagestan\n
     Khabib Nurmagomedov is a MMA fighter with a professional fight record of 28 wins, 0 losses and 0 draws`;
     p.setAttribute("class", "Khabibinfo")
+
+    // document.getElementById("#character-box").innerHTML = ""
+
     document.getElementById("character-box").append(p)
 
-    if(document.getElementById("character-box").contains(p)){
+    if(!document.getElementById("character-box").contains(p)){
         
 
 
 
     }
     else{
+        document.getElementById("character-box2").style.backgroundImage = "url(https://media.gettyimages.com/photos/khabib-nurmagomedov-of-russia-poses-for-a-portrait-backstage-after-picture-id943251436?s=612x612)";
         document.getElementById("character-box2").append(p)
     }
 
@@ -35,7 +39,7 @@ function Israel() {
         p.setAttribute("class", "Israelinfo")
         let box = document.getElementById("character-box").append(p)
     
-        if(document.box.contains(p)){
+        if(document.documentbox.contains(p)){
     
     
         }
