@@ -38,7 +38,7 @@ body {
 	font-family: "PT Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	background: none;
+	background: black;
 }
 
 h1,
@@ -350,7 +350,7 @@ ol {
 	font-size: 15px;
 	font-family: "Oswald", sans-serif;
 	font-weight: 500;
-	color: #081624;
+	color: red;
 	text-transform: uppercase;
 	padding: 36px 20px;
 	position: relative;
@@ -493,7 +493,13 @@ ol {
 -----------------------*/
 
 .hero-section {
-	height: 239px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	min-height: 550px;
+	background-color: white;
+	
 }
 
 .hero-section .hero-text {
@@ -953,12 +959,24 @@ ol {
 	margin-bottom: 40px;
 }
 
-.single-team-member .team-member-pic {
+.single-team-member {
 	margin-bottom: 100px;
-}
 
-.single-team-member .team-member-pic img {
+
+}
+.team-member-pic img {
+width: 170px;
+border-radius: 0 50% 50% 50%;
+height: 170px;
+
+padding: 20px;
+
+flex-grow: 1;
+
+}
+.single-team-member  {
 	min-width: 100%;
+	
 }
 
 .single-team-member .team-member-desc {
@@ -973,7 +991,7 @@ ol {
 	margin-bottom: 40px;
 }
 
-.single-team-member .team-member-desc h3:after {
+/* .single-team-member .team-member-desc h3:after {
 	position: absolute;
 	left: 0;
 	top: -23px;
@@ -981,7 +999,7 @@ ol {
 	width: 52px;
 	background: #7F1313;
 	content: "";
-}
+} */
 
 .single-team-member .team-member-certification h5 {
 	font-size: 18px;
@@ -1000,13 +1018,13 @@ ol {
 	margin-bottom: 20px;
 }
 
-.single-team-member .team-member-certification ul li::after {
+.team-member-certification ul li::after {
 	position: absolute;
 	left: -20px;
 	top: 6px;
 	height: 9px;
 	width: 9px;
-	background: #7F1313;
+	background: rgba(127, 19, 19, 0.75);
 	content: "";
 	border-radius: 50%;
 }
@@ -2099,7 +2117,7 @@ ol {
   top: 2px;
   left: -50px;
   background: linear-gradient(to right,  rgba(59,211,224,1) 0%,rgba(59,211,224,1) 84%,rgba(59,211,224,1) 91%,rgba(59,211,224,0.5) 96%,rgba(59,211,224,0) 100%); /* W3C */
-} */
+/* } */ */
 
 /* .ticker-tip {
   width: 100%;
@@ -2174,4 +2192,55 @@ ol {
 @keyframes news {
   0% {transform: translateX(0);}
   100% {transform: translateX(-4135px);}
+}
+/* ///more code/// */
+
+.pics{
+width: 170px;
+border-radius: 0 50% 50% 50%;
+height: 170px;
+
+padding: 20px;
+
+flex-grow: 1;
+}
+
+.team-info-sean,.team-info-kazim,.team-info-steven,.team-info-nick{
+
+	display: none;
+}
+
+
+#ex5 {
+  width: 700px;
+  margin: 0 auto;
+  min-height: 300px;
+}
+
+#ex5 #light {
+  margin: 0px;
+  opacity: 0.8;
+  border: 10px solid #eee;
+
+  /*Transition*/
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+
+  /*Reflection*/
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.1)));
+}
+
+
+
+#ex5 #light:hover {
+  opacity: 1;
+
+  /*Reflection*/
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.4)));
+
+  /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
 }

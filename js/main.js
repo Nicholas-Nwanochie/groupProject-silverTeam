@@ -69,9 +69,23 @@ Created: colorlib
     /*------------------
         Magnific Popup
     --------------------*/
-    $('.pop-up').magnificPopup({
-        type: 'iframe'
-    });
+    // $('.pop-up').magnificPopup({
+    //     type: 'iframe'
+        
+    // });
+
+    (function ($) {
+        $(document).ready(function () {
+            $('.pop-up').magnificPopup({
+                disableOn: 100,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: false
+            });
+        });
+    })(jQuery)
 
     /*------------------
         About Counter Up
@@ -80,7 +94,7 @@ Created: colorlib
         $(this).prop('Counter',0).animate({
         Counter: $(this).text()
         }, {
-            duration: 4000,
+            duration: 6000,
             easing: 'swing',
             step: function (now) {
             $(this).text(Math.ceil(now));
@@ -148,3 +162,64 @@ Created: colorlib
 
 
 })(jQuery);
+
+
+
+$(document).ready((e) => {
+    $("#nick").click((e) => {
+        let x = $(".team-info-nick").slideToggle();
+
+
+
+    });
+
+});
+
+$(document).ready(e => {
+    $("#kazim").click(e => {
+        let x = $(".team-info-kazim").slideToggle();
+    });
+});
+
+
+$(document).ready(e => {
+    $("#steven").click(e => {
+        let x = $(".team-info-steven").slideToggle();
+    });
+});
+
+
+$(document).ready(e => {
+    $("#sean").click(e => {
+        let x = $(".team-info-sean").slideToggle();
+    });
+});
+////like button code///
+let clickcount1 = 0;
+let likebutton1 = document.querySelector('#likes-button-1')
+//
+likebutton1.addEventListener('click', function () {
+
+    clickcount1 += 1;
+
+    let likecount1 = document.querySelector('#count-likes-1')
+
+    likecount1.textContent = clickcount1.toString();
+
+})
+
+let clickcount2 = 0;
+let likebutton2 = document.querySelector('#likes-button-2')
+let like2 = "like";
+//
+likebutton2.addEventListener('click', function () {
+
+    clickcount2 += 1 ;
+
+    let likecount2 = document.querySelector('#count-likes-2')
+
+    let like2 = document.querySelector('#like2')
+
+    likecount2.textContent = clickcount2.toString();
+    like2.textContent = like2.toString();
+})
