@@ -12,4 +12,38 @@ p.innerHTML=
     p.setAttribute("class", "Khabibinfo")
     document.getElementById("character-box").append(p)
 
+    if(document.getElementById("character-box").contains(p)){
+        
+
+
+
+    }
+    else{
+        document.getElementById("character-box2").append(p)
+    }
+
+
 }
+
+function Israel() {
+    document.getElementById("character-box").style.backgroundImage = "url(images/i.png)";
+    var p = document.createElement("p")
+    
+    p.innerHTML= 
+        `loremipsumdfjsdkjfjsdk`;
+
+        p.setAttribute("class", "Israelinfo")
+        let box = document.getElementById("character-box").append(p)
+    
+        if(document.box.contains(p)){
+    
+    
+        }
+        else{
+            document.getElementById("character-box2").style.backgroundImage = "url(images/i.png)";
+            document.getElementById("character-box2").append(p)
+        }
+    
+    
+    }
+    
