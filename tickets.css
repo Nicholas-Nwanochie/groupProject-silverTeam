@@ -50,7 +50,7 @@ img {
 #character-box{
 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     min-height: 600px;
     border: thin solid black;
 
@@ -58,7 +58,7 @@ img {
 
 #character-box2{
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     min-height: 600px;
     border: thin solid black;
 }
