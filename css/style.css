@@ -21,7 +21,6 @@ Created: colorlib
 5.  Booking Section
 6.  Services Section
 7.  Client Say Section
-8.  Life Style Section
 9.  Footer
 10. Other Pages Style
 
@@ -37,7 +36,7 @@ body {
 	height: 100%;
 	font-family: "PT Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+	font-: antialiased;
 	background-color: black;
 }
 
@@ -362,7 +361,7 @@ ol {
 
 .inner-header .logo {
 	float: left;
-	padding-top: 27px;
+	padding-top: 10px;
 	padding-left: 40px;
 }
 
@@ -463,8 +462,13 @@ ol {
   Hero Slider
 -----------------------*/
 
+.herocontainer {
+	width: 50%;
+}
+
 .single-hero-item {
 	height: 703px;
+	width: 100%;
 	padding-top: 220px;
 }
 
@@ -558,6 +562,12 @@ ol {
 /*---------------------
   Class Booking
 -----------------------*/
+
+.calendar {
+	width: 1000px;
+	height: 1000px;
+
+}
 
 .booking-heading {
 	background: #7F1313;
@@ -678,6 +688,7 @@ ol {
 -----------------------*/
 
 .client-says {
+	display: flex;
 	background-size: stretch;
 	text-align: left;
 	background-color: rgba(0, 0, 0, 0.55) !important;
@@ -708,16 +719,16 @@ ol {
 }
 
 /*---------------------
-  Lifestyles Section
+   Fighter Highlight Section
 -----------------------*/
 
 .lifestyle-section {
-	padding-top: 150px;
+	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
 .lifestyle-text {
-	margin-top: 88px;
+	/* margin-top: 88px; */
 }
 
 .lifestyle-text .section-title h2 {
@@ -731,6 +742,16 @@ ol {
 .lifestyle-text .section-title p {
 	color:#FFFDEF ;
 	margin-bottom: 52px;
+}
+
+.blur {
+    transform: scale(0.9);
+    opacity: 0.6;
+  	-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
 }
 
 /*---------------------
@@ -869,10 +890,10 @@ ol {
 
 .footer-section {
 	background: #081624;
-	padding-top: 35px;
+	/* padding-top: 35px;
 	padding-bottom: 30px;
 	padding-left: 40px;
-	padding-right: 40px;
+	padding-right: 40px; */
 }
 
 .footer-section .reserved {
@@ -1095,6 +1116,23 @@ ol {
   Classes
 -----------------------*/
 
+.tickets{
+	display: flex;
+	flex-direction: row;
+	margin-top: 80px;
+	margin-bottom: 130px;
+	max-width: 100%;
+}
+
+.ticketHead {
+	color: #7F1313;
+	/* width: 50%; */
+}
+
+.cal {
+	width: 50%;
+}
+
 .classes-section {
 	padding-top: 112px;
 	padding-bottom: 85px;
@@ -1125,8 +1163,8 @@ ol {
 -----------------------*/
 
 .classes-time-section {
-	padding-top: 115px;
-	padding-bottom: 130px;
+	/* padding-top: 115px;
+	padding-bottom: 130px; */
 }
 
 .week-name {
@@ -1158,7 +1196,7 @@ ol {
 
 .daily-work .work-hours {
 	height: 64px;
-	background: #F3F4FF;
+	background: #545454;
 	margin-bottom: 4px;
 }
 
@@ -1849,9 +1887,11 @@ ol {
 /*------------------------ Responsive Media Styles ----------------------*/
 @media (min-width: 1200px) {
 	.container {
-	  max-width: 1176px;
+		max-width: 1176px;
 	}
 }
+
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1450px) {
 	.single-blog-item.blog-item .blog-text h3 {
@@ -2149,7 +2189,8 @@ ol {
   width: 100%;
   padding: 5px 0 120px;
   position: fixed;
-  bottom: -50px;
+  bottom: -120px;
+  z-index: 1000;
   left: 0;
   font-family: 'Montserrat', Arial;
 }
@@ -2180,7 +2221,7 @@ ol {
   top: 2px;
   left: -50px;
   background: linear-gradient(to right,  rgba(59,211,224,1) 0%,rgba(59,211,224,1) 84%,rgba(59,211,224,1) 91%,rgba(59,211,224,0.5) 96%,rgba(59,211,224,0) 100%); /* W3C */
-} */
+
 
 /* .ticker-tip {
   width: 100%;

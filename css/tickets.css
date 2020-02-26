@@ -1,0 +1,63 @@
+img {
+    width: 50px;
+    margin: 0 auto;
+    min-height: 50px;
+    }
+
+    #ex5 img {
+    margin: 25px;
+    opacity: 0.8;
+    border: 10px solid #eee;
+    /*Transition*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    /*Reflection*/
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+   }
+
+
+    img:hover {  
+    opacity: 1;
+
+        /*Reflection*/
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+        /*Glow*/
+    -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
+
+
+
+#character-box{
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 600px;
+    border: thin solid black;
+
+}
+
+#character-box2{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 600px;
+    border: thin solid black;
+}
+
+.versus{
+
+}
+
+
+/* .Khabibinfo{
+    color: white;
+}
+.Israelinfo{
+    color: white;
+} */
+
+p{
+    color: white;
+} 

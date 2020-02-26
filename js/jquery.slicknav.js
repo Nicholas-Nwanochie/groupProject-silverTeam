@@ -581,4 +581,22 @@
             return returns !== undefined ? returns : this;
         }
     };
+
+    // $('.galThumbnail').click(function(){
+    //     $('.modal-body').empty();
+    //     $($(this).parents('div').html()).appendTo('.modal-body');
+    //     $('#modal').modal({
+    //         show:true,
+    //         backdrop:true,
+    //         focus:true,
+    //     });
+    // });
+    
+    // $('#modal').on('show.bs.modal', function () {
+    //     $('.col-6,.row .galThumbnail').addClass('blur');
+    // })
+    
+    // $('#modal').on('hide.bs.modal', function () {
+    //     $('.col-6,.row .galThumbnail').removeClass('blur');
+    // })
 }(jQuery, document, window));
