@@ -69,23 +69,23 @@ Created: colorlib
     /*------------------
         Magnific Popup
     --------------------*/
-    // $('.pop-up').magnificPopup({
-    //     type: 'iframe'
+    $('.pop-up').magnificPopup({
+        type: 'iframe'
         
-    // });
+    });
 
-    (function ($) {
-        $(document).ready(function () {
-            $('.pop-up').magnificPopup({
-                disableOn: 100,
-                type: 'iframe',
-                mainClass: 'mfp-fade',
-                removalDelay: 160,
-                preloader: false,
-                fixedContentPos: false
-            });
-        });
-    })(jQuery)
+    // (function ($) {
+    //     $(document).ready(function () {
+    //         $('.pop-up').magnificPopup({
+    //             disableOn: 100,
+    //             type: 'iframe',
+    //             mainClass: 'mfp-fade',
+    //             removalDelay: 160,
+    //             preloader: false,
+    //             fixedContentPos: false
+    //         });
+    //     });
+    // })(jQuery)
 
     /*------------------
         About Counter Up
@@ -222,4 +222,95 @@ likebutton2.addEventListener('click', function () {
 
     likecount2.textContent = clickcount2.toString();
     like2.textContent = like2.toString();
+})
+
+let clickcount3 = 0;
+let likebutton3 = document.querySelector('#likes-button-3')
+//
+likebutton3.addEventListener('click', function () {
+
+    clickcount3 += 1;
+
+    let likecount3 = document.querySelector('#count-likes-3')
+
+    likecount3.textContent = clickcount3.toString();
+
+})
+
+let clickcount4 = 0;
+let likebutton4 = document.querySelector('#likes-button-4')
+//
+likebutton4.addEventListener('click', function () {
+
+    clickcount4 += 1;
+
+    let likecount4 = document.querySelector('#count-likes-4')
+
+    likecount4.textContent = clickcount4.toString();
+
+})
+
+let clickcount5 = 0;
+let likebutton5 = document.querySelector('#likes-button-5')
+//
+likebutton5.addEventListener('click', function () {
+
+    clickcount5 += 1;
+
+    let likecount5 = document.querySelector('#count-likes-5')
+
+    likecount5.textContent = clickcount5.toString();
+
+})
+
+let clickcount6 = 0;
+let likebutton6 = document.querySelector('#likes-button-6')
+//
+likebutton6.addEventListener('click', function () {
+
+    clickcount6 += 1;
+
+    let likecount6 = document.querySelector('#count-likes-6')
+
+    likecount6.textContent = clickcount6.toString();
+
+})
+
+let clickcount7 = 0;
+let likebutton7 = document.querySelector('#likes-button-7')
+//
+likebutton7.addEventListener('click', function () {
+
+    clickcount7 += 1;
+
+    let likecount7 = document.querySelector('#count-likes-7')
+
+    likecount7.textContent = clickcount7.toString();
+
+})
+
+let clickcount8 = 0;
+let likebutton8 = document.querySelector('#likes-button-8')
+//
+likebutton8.addEventListener('click', function () {
+
+    clickcount8 += 1;
+
+    let likecount8 = document.querySelector('#count-likes-8')
+
+    likecount8.textContent = clickcount8.toString();
+
+})
+
+let clickcount9 = 0;
+let likebutton9 = document.querySelector('#likes-button-9')
+//
+likebutton9.addEventListener('click', function () {
+
+    clickcount9 += 1;
+
+    let likecount9 = document.querySelector('#count-likes-9')
+
+    likecount9.textContent = clickcount9.toString();
+
 })
