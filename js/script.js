@@ -1,6 +1,6 @@
 
 function Khabib() {
-document.getElementById("character-box").style.backgroundImage = "url(https://media.gettyimages.com/photos/khabib-nurmagomedov-of-russia-poses-for-a-portrait-backstage-after-picture-id943251436?s=612x612)";
+document.getElementById("character-box").style.backgroundImage = "url(https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/2611557.png&w=350&h=254)";
 var p = document.createElement("p")
 
 p.innerHTML= 
@@ -22,7 +22,7 @@ p.innerHTML=
 
     }
     else{
-        document.getElementById("character-box2").style.backgroundImage = "url(https://media.gettyimages.com/photos/khabib-nurmagomedov-of-russia-poses-for-a-portrait-backstage-after-picture-id943251436?s=612x612)";
+        document.getElementById("character-box2").style.backgroundImage = "url(https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/2611557.png&w=350&h=254)";
         document.getElementById("character-box2").append(p)
     }
 
