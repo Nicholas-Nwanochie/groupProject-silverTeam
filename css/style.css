@@ -33,11 +33,19 @@ Created: colorlib
 
 html,
 body {
+<<<<<<< HEAD
   height: 100%;
   font-family: "PT Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   background: black;
+=======
+	height: 100%;
+	font-family: "PT Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	background: none;
+>>>>>>> parent of 72dea37... i commited a new branch guys
 }
 
 h1,
@@ -352,6 +360,7 @@ ol {
 }
 
 .inner-header .main-menu ul li a {
+<<<<<<< HEAD
   font-size: 15px;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -360,6 +369,16 @@ ol {
   padding: 36px 20px;
   position: relative;
   z-index: 1;
+=======
+	font-size: 15px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
+	color: #081624;
+	text-transform: uppercase;
+	padding: 36px 20px;
+	position: relative;
+	z-index: 1;
+>>>>>>> parent of 72dea37... i commited a new branch guys
 }
 
 .inner-header .main-menu ul li a.active {
@@ -498,7 +517,12 @@ ol {
 -----------------------*/
 
 .hero-section {
+<<<<<<< HEAD
   display: flex;
+=======
+	height: 239px;
+}
+>>>>>>> parent of 72dea37... i commited a new branch guys
 
   height: 300px;
 }
@@ -975,6 +999,7 @@ ol {
   margin-bottom: 40px;
 }
 
+<<<<<<< HEAD
 .single-team-member {
   margin-bottom: 100px;
 }
@@ -989,6 +1014,14 @@ ol {
 }
 .single-team-member {
   min-width: 100%;
+=======
+.single-team-member .team-member-pic {
+	margin-bottom: 100px;
+}
+
+.single-team-member .team-member-pic img {
+	min-width: 100%;
+>>>>>>> parent of 72dea37... i commited a new branch guys
 }
 
 .single-team-member .team-member-desc {
@@ -1003,7 +1036,7 @@ ol {
   margin-bottom: 40px;
 }
 
-/* .single-team-member .team-member-desc h3:after {
+.single-team-member .team-member-desc h3:after {
 	position: absolute;
 	left: 0;
 	top: -23px;
@@ -1011,7 +1044,7 @@ ol {
 	width: 52px;
 	background: #7F1313;
 	content: "";
-} */
+}
 
 .single-team-member .team-member-certification h5 {
   font-size: 18px;
@@ -1030,6 +1063,7 @@ ol {
   margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 .team-member-certification ul li::after {
   position: absolute;
   left: -20px;
@@ -1039,6 +1073,17 @@ ol {
   background: rgba(127, 19, 19, 0.75);
   content: "";
   border-radius: 50%;
+=======
+.single-team-member .team-member-certification ul li::after {
+	position: absolute;
+	left: -20px;
+	top: 6px;
+	height: 9px;
+	width: 9px;
+	background: #7F1313;
+	content: "";
+	border-radius: 50%;
+>>>>>>> parent of 72dea37... i commited a new branch guys
 }
 
 /*---------------------
@@ -2126,8 +2171,12 @@ ol {
   top: 2px;
   left: -50px;
   background: linear-gradient(to right,  rgba(59,211,224,1) 0%,rgba(59,211,224,1) 84%,rgba(59,211,224,1) 91%,rgba(59,211,224,0.5) 96%,rgba(59,211,224,0) 100%); /* W3C */
+<<<<<<< HEAD
 /* } */
 */
+=======
+} */
+>>>>>>> parent of 72dea37... i commited a new branch guys
 
 /* .ticker-tip {
   width: 100%;
@@ -2223,6 +2272,7 @@ ol {
     transform: translateX(-4135px);
   }
 }
+<<<<<<< HEAD
 /* ///more code/// */
 
 .pics {
@@ -2273,3 +2323,5 @@ ol {
   -moz-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
 }
+=======
+>>>>>>> parent of 72dea37... i commited a new branch guys

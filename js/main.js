@@ -71,6 +71,7 @@ Created: colorlib
     --------------------*/
     $('.pop-up').magnificPopup({
         type: 'iframe'
+<<<<<<< HEAD
         
     });
 
@@ -86,6 +87,9 @@ Created: colorlib
     //         });
     //     });
     // })(jQuery)
+=======
+    });
+>>>>>>> parent of 72dea37... i commited a new branch guys
 
     /*------------------
         About Counter Up
@@ -94,7 +98,7 @@ Created: colorlib
         $(this).prop('Counter',0).animate({
         Counter: $(this).text()
         }, {
-            duration: 6000,
+            duration: 4000,
             easing: 'swing',
             step: function (now) {
             $(this).text(Math.ceil(now));
@@ -161,6 +165,7 @@ Created: colorlib
 
 
 
+<<<<<<< HEAD
 })(jQuery);
 
 
@@ -314,3 +319,6 @@ likebutton9.addEventListener('click', function () {
     likecount9.textContent = clickcount9.toString();
 
 })
+=======
+})(jQuery);
+>>>>>>> parent of 72dea37... i commited a new branch guys
